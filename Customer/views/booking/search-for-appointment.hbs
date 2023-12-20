@@ -9,20 +9,20 @@
                     <h3 style="font-weight: bold; padding-left:15px"><i class="fa fa-book" style="margin-right: 10px;"></i>Thông tin buổi hẹn</h3>
                     <br>
                     <div class="row">
-                        <div class="input-information col-lg-3 col-md-6 col-sm-6" style="margin-left: 10px">
+                        <div class="input-information col-lg-2 col-md-6 col-sm-6" style="margin-left: 10px">
                             <div class="form-input" style="margin-bottom: 50px;">
                                 <p>Họ tên: </p>
-                                <input type="text" placeholder="Nhập họ tên..." required/> 
+                                <input type="text" style="background: none; border: none; border-bottom: 1px solid black; width: 90%"  required/> 
                             </div>
                             <div class="form-input" style="margin-bottom: 50px;">
                                 <p>Mô tả triệu chứng: </p>
-                                <input type="text" placeholder="Nhập triệu chứng..."> 
+                                <input type="text" style="background: none; border: none; border-bottom: 1px solid black; width: 90%" > 
                             </div>
                         </div>
-                        <div class="input-information col-lg-3 col-md-6 col-sm-6"  style="margin-left: 10px">
+                        <div class="input-information col-lg-2 col-md-6 col-sm-6"  style="margin-left: 10px">
                             <div class="form-input" style="margin-bottom: 50px;">
                                 <p>Email: </p>
-                                <input type="text" placeholder="Nhập email..." required/> 
+                                <input type="text" style="background: none; border: none; border-bottom: 1px solid black; width: 90%" required/> 
                             </div>
                             <div class="form-input" style="margin-bottom: 50px;">
                                 <p>Thời gian: </p>
@@ -42,13 +42,105 @@
                                 </select>
                             </div>
                         </div>
-                        <div class=" col-lg-6 col-md-6 col-sm-6">
-                            <button type="submit" class="site-btn button_srch">Tra cứu</button>
+                        <div class="space"></div>
+                        <div class="input-information col-lg-7 col-md-6 col-sm-6" style="margin-left: 10px">
+                          <div class="elegant-calencar d-md-flex">
+                            <div class="wrap-header d-flex align-items-center img" style="background-image: url(img/bg.jpg);">
+                              <p id="reset">HÔM NAY</p>
+                              <div id="header" class="p-0">
+                                <!-- <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div> -->
+                                <div class="head-info">
+                                  <div class="head-month"></div>
+                                    <div class="head-day"></div>
+                                </div>
+                                <!-- <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div> -->
+                              </div>
+                            </div>
+                            <div class="calendar-wrap">
+                              <div class="w-100 button-wrap">
+                                <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
+                                <div class="head-month"></div>
+                                <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
+                              </div>
+                              <table id="calendar">
+                                <thead>
+                                    <tr>
+                                      <th>CN</th>
+                                      <th>TH2</th>
+                                      <th>TH3</th>
+                                      <th>TH4</th>
+                                      <th>TH5</th>
+                                      <th>TH6</th>
+                                      <th>TH7</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class=" col-lg-12 col-md-6 col-sm-6">
+              <button type="submit" class="site-btn button_srch">Tra cứu</button>
             </div>
         </div>
     </div>
 </div>
 <div class="space"></div>
+
