@@ -2858,6 +2858,7 @@ label{
   border-radius: 25px;
   height: 120px;
   background-color: #bacfd6;
+  transition: 0.50s ease-in-out;
   margin-bottom: 15px;
 }
 
