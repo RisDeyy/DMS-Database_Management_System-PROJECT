@@ -7,17 +7,17 @@
                     <div class="menu-title text-decoration-none">
                         <a href="/" class="text-decoration-none">
                             <img class="menu-nav" src="/images/background/smile.png" alt="img logo">
-                            <span class="text-decoration-none">Doctors care</span>
+                            <span class="text-decoration-none">Dr.</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-8 d-flex flex-row justify-content-center align-self-center menu-type">
-                    <span class="d-block"><a href="/" class="text-decoration-none">Homepage</a></span>
-                    <span class="d-block mx-5"><a href="/for-patients" class="text-decoration-none">For patients</a></span>
-                    <span class="d-block"><a href="/for-doctors" class="text-decoration-none">For doctors</a></span>
+                    <span class="d-block"><a href="/" class="text-decoration-none">TTRANG CHỦ</a></span>
+                    <span class="d-block mx-5"><a href="/for-patients" class="text-decoration-none">Khách Hàng</a></span>
+                    <span class="d-block"><a href="/for-doctors" class="text-decoration-none">Nha Sĩ</a></span>
                 </div>
                 <div class="col-2 d-flex justify-content-center align-items-center">
-                    <span><a href="#" target="_blank" class="text-decoration-none">Need support?</a></span>
+                    <span><a href="#" target="_blank" class="text-decoration-none">Hỗ trợ ngay khi bạn cần</a></span>
                 </div>
             </div>
         </div>
@@ -28,9 +28,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-3">
-                    <a class="text-decoration-none" href="/">Homepage </a><span aria-hidden="true">&raquo;</span>
+                    <a class="text-decoration-none" href="/">TRANG CHỦ </a><span aria-hidden="true">&raquo;</span>
                     <span style="text-transform: uppercase">
-                  Send feedback
+                        Gửi đánh giá
                     </span>
                 </div>
             </div>
@@ -42,33 +42,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto">
-                    <h2>Send feedback after going to the doctor</h2>
+                    <h2>Gửi Đánh Giá Sau Khi Khám</h2>
                     <hr>
                     <div>
-                        Your feedback will make it easier for others to choose the right doctor.                    </div>
+                        Đánh giá của bạn sẽ giúp người khác dễ dàng lựa chọn bác sĩ phù hợp hơn.                  
+                    </div>
                     <div class="mt-2">
-                        Please consult your doctor after consulting your doctor: <%= doctor.name %>
+                       Tham khảo ý kiến Nha sĩ của bạn: <%= doctor.name %>
                     </div>
                     <form id="formFeedBack">
                         <div class="form-row mt-4">
                             <div class="col">
-                                <label for="feedbackName">Full </label>
+                                <label for="feedbackName">Họ tên</label>
                                 <input class="form-control" name="feedbackName" id="feedbackName" type="text"
-                                       placeholder="Full name (required)">
+                                       placeholder="Họ tên... ">
                             </div>
                             <div class="col">
-                                <label for="feedbackPhone">Phone number</label>
+                                <label for="feedbackPhone">Số điện thoại</label>
                                 <input class="form-control" name="feedbackPhone" id="feedbackPhone" type="text"
-                                       placeholder="Phone number (required)">
+                                       placeholder="Số điện thoại...">
                             </div>
                         </div>
                         <div class="form-group mt-2">
-                            <label for="feedbackContent">Content</label>
-                            <textarea class="form-control" name="feedbackContent" id="feedbackContent"
+                            <label for="feedbackContent">Nội dung đánh giá</label>
+                            <textarea class="form-control" name="feedbackContent" id="Nội dung..."
                                       type="text"></textarea>
                         </div>
                         <div class="mb-4">
-                            <button type="button" class="btn btn-primary" data-doctor-id="<%= doctor.id %>" id="sendFeedback">Submit</button>
+                            <button type="button" class="btn btn-primary" data-doctor-id="<%= doctor.id %>" id="sendFeedback">Gửi</button>
                         </div>
                     </form>
                 </div>
