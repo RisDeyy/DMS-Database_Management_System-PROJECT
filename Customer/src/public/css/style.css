@@ -100,6 +100,7 @@ body {
   .sec-header .content-header {
     background-color: #f5f5f5;
     color: #2a96a5;
+    margin-bottom: 50px;
     font-weight: bold;
     border-bottom: 2px solid #ebebeb; }
   .sec-header .title-and-icon {
@@ -231,7 +232,9 @@ body {
     color: black !important; }
     .sec-for-doctors .contact-admin:hover {
       background: #cccccc; }
-
+.sec-for-doctors .main-for-doctors h2{
+  color: #9dd4e0;
+}
 footer {
   height: 50px;
   background-color: #e6e6e6; }
