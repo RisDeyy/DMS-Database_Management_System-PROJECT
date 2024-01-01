@@ -196,7 +196,7 @@ let handleMessage = async (sender_psid, received_message) => {
     //handle message for react, like press like button
     // id like button: sticker_id 369239263222822
     if (received_message.sticker_id) {
-        await callSendAPI(sender_psid, "Cảm ơn bạn đã sử dụng dịch vụ của Doctors Care !!!");
+        await callSendAPI(sender_psid, "Cảm ơn bạn đã sử dụng dịch vụ của Dr.DauKep !!!");
         return;
     }
     //checking quick reply
@@ -238,8 +238,8 @@ let handleEntity = async (name, sender_psid, entity) => {
         case "intent":
             if (entity.value === 'doctors') {
                 await callSendAPI(sender_psid, "Bạn đang tìm kiếm thông tin về bác sĩ, xem thêm ở link bên dưới nhé.");
-                let title = "Doctors Care";
-                let subtitle = 'Thông tin bác sĩ làm việc tại Doctors Care';
+                let title = "Dr.DauKep";
+                let subtitle = 'Thông tin bác sĩ làm việc tại Dr.DauKep';
                 await callSendAPIv2(sender_psid, title, subtitle, DOCTOR_IMAGE_URL, DOCTOR_URL);
                 await sendMessageDefault(sender_psid, "Xem thêm thông tin:");
             }
@@ -260,17 +260,17 @@ let handleEntity = async (name, sender_psid, entity) => {
             break;
         case"booking":
             await callSendAPI(sender_psid, "Bạn đang cần đặt lịch khám bệnh, xem thêm hướng dẫn đặt lịch chi tiết ở link bên dưới nhé.");
-            await callSendAPIv2(sender_psid, "Đặt lịch khám bệnh", "Hướng dẫn đặt lịch khám bệnh tại Doctors Care", BOOKING_IMAGE_URL, BOOKING_URL);
+            await callSendAPIv2(sender_psid, "Đặt lịch khám bệnh", "Hướng dẫn đặt lịch khám bệnh tại Dr.DauKep", BOOKING_IMAGE_URL, BOOKING_URL);
             await sendMessageDefault(sender_psid, "Xem thêm thông tin:");
             break;
         case"info":
             await callSendAPI(sender_psid, "Bạn đang tìm hiểu về thông tin website, xem thêm ở link bên dưới nhé.");
-            await callSendAPIv2(sender_psid, "Thông tin website", "Thông tin website Doctors care", INFOWEBSITE_IMAGE_URL, INFOWEBSITE_URL);
+            await callSendAPIv2(sender_psid, "Thông tin website", "Thông tin website Dr.DauKep", INFOWEBSITE_IMAGE_URL, INFOWEBSITE_URL);
             await sendMessageDefault(sender_psid, "Xem thêm thông tin:");
             break;
         default:
             await callSendAPI(sender_psid, "Rất tiếc bot chưa được hướng dẫn để trả lời câu hỏi của bạn. Để được hỗ trợ, vui lòng truy câp:");
-            await callSendAPIv2(sender_psid, "Hỗ trợ khách hàng", "Thông tin hỗ trợ khách hàng Doctors care", DEFAULT_IMAGE_URL, DEFAULT_URL);
+            await callSendAPIv2(sender_psid, "Hỗ trợ khách hàng", "Thông tin hỗ trợ khách hàng Dr.DauKep", DEFAULT_IMAGE_URL, DEFAULT_URL);
             await sendMessageDefault(sender_psid, "Xem thêm thông tin:");
     }
 };
@@ -588,8 +588,8 @@ let sendMessageReplyDoctors = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             let response1 = {
-                "text": "Doctors Care tự hào mang đến cho bạn đội ngũ bác sĩ hàng đầu, chất lượng và uy tín." +
-                    "\n\nMột số bác sĩ tiêu biểu trên Doctors Care:"
+                "text": "Dr.DauKep tự hào mang đến cho bạn đội ngũ bác sĩ hàng đầu, chất lượng và uy tín." +
+                    "\n\nMột số bác sĩ tiêu biểu trên Dr.DauKep:"
             };
 
             let response2 = {
@@ -692,8 +692,8 @@ let sendMessageReplySpecialization = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             let response1 = {
-                "text": "Doctors Care có đầy đủ các chuyên khoa khám chữa bệnh cho mọi lứa tuổi." +
-                    "\n\nMột số chuyên khoa tiêu biểu trên Doctors Care:"
+                "text": "Dr.DauKep có đầy đủ các chuyên khoa khám chữa bệnh cho mọi lứa tuổi." +
+                    "\n\nMột số chuyên khoa tiêu biểu trên Dr.DauKep:"
             };
 
             let response2 = {
@@ -793,8 +793,8 @@ let sendMessageReplyClinics = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             let response1 = {
-                "text": "Doctors Care có trên 20 cơ sở y tế, phòng khám hợp tác phát triển." +
-                    "\n\nMột số phòng khám tiêu biểu trên Doctors Care:"
+                "text": "Dr.DauKep có trên 20 cơ sở y tế, phòng khám hợp tác phát triển." +
+                    "\n\nMột số phòng khám tiêu biểu trên Dr.DauKep:"
             };
 
             let response2 = {

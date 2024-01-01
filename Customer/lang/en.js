@@ -6,35 +6,35 @@ export const transValidation = {
 };
 
 export const transMailBookingNew = {
-    subject: "Email notification of booking progress at Doctors Care",
+    subject: "Email notification of booking progress at Dr.DauKep",
     template: (data) => {
-        return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
+        return `<h3>Thank you for booking an appointment at Dr.DauKep's system </h3>
         <h4>Information for booked appointment:</h4>
         <div>Doctor's name: ${data.doctor} </div>
         <div>Time: ${data.time}</div>
         <div>Date: ${data.date}</div>
         <div>Status: <b> Pending - A new appointment is waiting for confirmation</b></div>
-        <h4>Doctors Care system will automatically send email notification when confirmed appointment is complete. Thank you !</h4>`;
+        <h4>Dr.DauKep system will automatically send email notification when confirmed appointment is complete. Thank you !</h4>`;
     },
 };
 
 export const transMailBookingFailed = {
-    subject: "Email notification of booking progress at Doctors Care",
+    subject: "Email notification of booking progress at Dr.DauKep",
     template: (data) => {
-        return `<h3>Thank you for booking an appointment at Doctors Care's system  </h3>
+        return `<h3>Thank you for booking an appointment at Dr.DauKep's system  </h3>
         <h4>Information for booked appointment:</h4>
         <div>Doctor's name: ${data.doctor} </div>
         <div>Time: ${data.time}</div>
         <div>Date: ${data.date}</div>
         <div>Status: <b>Cancel - ${data.reason}</b></div>
-        <h4>If you notice errors from this email, please contact the support operator: <b> 911 911 </b>. Thank you !</h4>`;
+        <h4>If you notice errors from this email, please contact the support operator: <b> 1900 1000 </b>. Thank you !</h4>`;
     },
 };
 
 export const transMailBookingSuccess = {
-    subject: "Email notification of booking progress at Doctors Care",
+    subject: "Email notification of booking progress at Dr.DauKep",
     template: (data) => {
-        return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
+        return `<h3>Thank you for booking an appointment at Dr.DauKep's system </h3>
         <h4>Information for booked appointment:</h4>
         <div>Doctor's name: ${data.doctor} </div>
         <div>Time: ${data.time}</div>
@@ -53,7 +53,7 @@ export const transMailRemedy= {
         <br>
         <div>For example: Full name: Hary Pham, with the registered phone number: 0123456789 and born: 1910, the extracted password is: <b> harypham-012-10 </b> </div>
         <br>
-        <div>In the event of neither receiving attachments nor decompressing, please contact the support operator<b>911 911</b></div>
+        <div>In the event of neither receiving attachments nor decompressing, please contact the support operator<b>1900 1000</b></div>
         <h4>Thank you !</h4>`;
     },
 };
