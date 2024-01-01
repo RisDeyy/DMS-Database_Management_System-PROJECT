@@ -336,13 +336,13 @@ CREATE TABLE IF NOT EXISTS `specializations` (
 --
 
 INSERT INTO `specializations` (`id`, `name`, `description`, `image`, `createdAt`, `updatedAt`, `deletedAt`) VALUES
-(1, 'Otolaryngology', NULL, 'otolaryngology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
-(2, 'Neurosurgery', NULL, 'neurosurgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
-(3, 'Surgery', NULL, 'surgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
-(4, 'Cardiology (Heart)', NULL, 'cardiology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
+(1, 'Niềng răng', NULL, 'otolaryngology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
+(2, 'Bọc răng sứ', NULL, 'neurosurgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
+(3, 'Nhổ răng khôn', NULL, 'surgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
+(4, 'Hàm trám răng', NULL, 'cardiology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
 (5, 'Medicine', NULL, 'medicine.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
-(6, 'Transplant Hepatology', NULL, 'neurosurgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
-(7, 'Plastic Surgery', NULL, 'otolaryngology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL);
+(6, 'Điều trị tủy', NULL, 'neurosurgery.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL),
+(7, 'Cấy ghép implant', NULL, 'otolaryngology.jpg', '2023-11-13 19:44:36', '2023-11-13 19:44:36', NULL);
 
 -- --------------------------------------------------------
 
