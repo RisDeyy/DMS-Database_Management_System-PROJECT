@@ -9,7 +9,7 @@ module.exports = {
                 password: '$2a$07$Bq0hCq3kVrvKUHfMT0NJROmQkx09aEQkGlwBGEdw799YJvWqH1kuy', //123456
                 address: 'New York',
                 phone: '088456732',
-                avatar: 'admin.png',
+                avatar: 'admin.jpg',
                 roleId: 1,
                 createdAt: new Date(),
                 updatedAt: new Date()
